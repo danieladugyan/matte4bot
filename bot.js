@@ -16,7 +16,7 @@ client.on('message', async (message) => {
   try {
     if (message.content.charAt(0) === '.') {
       let uppgift = message.content.slice(1);
-      let ytsearch = "Fredrik Lindmark Matmatik 5000 4 " + uppgift;
+      let ytsearch = "Fredrik Lindmark Matematik 5000 4 " + uppgift;
       let video = await youtube.searchVideos(ytsearch);
       let res = "https://www.youtube.com/watch?v=" + video.id;
 
